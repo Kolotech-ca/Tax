@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <!-- URL for the homepage -->
+  <url>
+    <loc>https://kolotech-ca.github.io/Tax/</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Add more URLs here as needed -->
+
+  <!-- Example for another page -->
+  <url>
+    <loc>https://kolotech-ca.github.io/Tax/index.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Example for a 3 page -->
+  <url>
+    <loc>https://kolotech-ca.github.io/Tax/Intake-form.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Example for a 4 page -->
+  <url>
+    <loc>https://kolotech-ca.github.io/Tax/personal-tax.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Example for a 5 page -->
+  <url>
+    <loc>https://kolotech-ca.github.io/Tax/self-employed-tax.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Example for a 6 page -->
+  <url>
+    <loc>https://kolotech-ca.github.io/Tax/incorporated-tax.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Example for a 7 page -->
+  <url>
+    <loc>https://kolotech-ca.github.io/Tax/contact.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
