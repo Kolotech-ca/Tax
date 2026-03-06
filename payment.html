@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Payment - KoloTech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8; /* Light brand background */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px;
+      background: #556cd6; /* KoloTech primary color */
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      height: 50px;
+      margin-left: 20px;
+    }
+
+    main {
+      text-align: center;
+      margin-top: 100px;
+      padding: 0 20px;
+      max-width: 500px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      padding: 40px 30px;
+    }
+
+    main h1 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    main p {
+      color: #555;
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+
+    .pay-button {
+      background: #556cd6; /* KoloTech primary color */
+      color: white;
+      font-size: 20px;
+      padding: 18px 50px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .pay-button:hover {
+      background: #4054a0;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Replace logo.png with your KoloTech logo file -->
+    <img src="logo.png" alt="KoloTech Logo">
+  </header>
+
+  <main>
+    <h1>Secure Payment</h1>
+    <p>Pay safely for your KoloTech service using Stripe. Click the button below to proceed.</p>
+
+    <!-- Replace YOUR_STRIPE_PAYMENT_LINK with your actual Stripe Payment Link -->
+    <a class="pay-button" href="https://buy.stripe.com/fZucMYf5AeDgfLibMY5sA00" target="_blank">
+      Pay Invoice Amount
+    </a>
+  </main>
+
+  <footer>
+    &copy; 2026 KoloTech. All rights reserved.
+  </footer>
+
+</body>
+</html>
