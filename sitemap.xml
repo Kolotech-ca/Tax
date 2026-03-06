@@ -21,7 +21,7 @@
 
   <!-- Example for a 3 page -->
   <url>
-    <loc>https://kolotech-ca.github.io/Tax/Intake-form.html</loc>
+    <loc>https://kolotech-ca.github.io/Tax/intake-form.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -58,5 +58,6 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
 
 </urlset>
