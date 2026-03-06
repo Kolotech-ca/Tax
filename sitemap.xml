@@ -3,7 +3,7 @@
   
   <!-- URL for the homepage -->
   <url>
-    <loc>https://kolotech-ca.github.io/Tax/</loc>
+    <loc>https://KoloTech-ca.github.io/Tax/</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
@@ -13,7 +13,7 @@
 
   <!-- Example for another page -->
   <url>
-    <loc>https://kolotech-ca.github.io/Tax/index.html</loc>
+    <loc>https://KoloTech-ca.github.io/Tax/index.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -21,7 +21,7 @@
 
   <!-- Example for a 3 page -->
   <url>
-    <loc>https://kolotech-ca.github.io/Tax/intake-form.html</loc>
+    <loc>https://KoloTech-ca.github.io/Tax/intake-form.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -29,7 +29,7 @@
 
   <!-- Example for a 4 page -->
   <url>
-    <loc>https://kolotech-ca.github.io/Tax/personal-tax.html</loc>
+    <loc>https://KoloTech-ca.github.io/Tax/personal-tax.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -37,7 +37,7 @@
 
   <!-- Example for a 5 page -->
   <url>
-    <loc>https://kolotech-ca.github.io/Tax/self-employed-tax.html</loc>
+    <loc>https://KoloTech-ca.github.io/Tax/self-employed-tax.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -45,7 +45,7 @@
   
   <!-- Example for a 6 page -->
   <url>
-    <loc>https://kolotech-ca.github.io/Tax/incorporated-tax.html</loc>
+    <loc>https://KoloTech-ca.github.io/Tax/incorporated-tax.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -53,7 +53,7 @@
 
   <!-- Example for a 7 page -->
   <url>
-    <loc>https://kolotech-ca.github.io/Tax/contact.html</loc>
+    <loc>https://KoloTech-ca.github.io/Tax/contact.html</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
