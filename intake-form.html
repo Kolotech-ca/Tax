@@ -205,7 +205,8 @@ form button:hover { background:#005f86;}
             <label for="expense_docs">Upload Expense Documents (Tuition, Childcare, etc.)</label>
             <input type="file" id="expense_docs" name="expense_docs[]" multiple>
         </div>
-
+        <!-- Redirect after submit -->
+        <input type="hidden" name="_next" value="https://www.kolotech.ca/index.html">
         <button type="submit">Submit Intake Form</button>
     </form>
 </div>
@@ -238,4 +239,5 @@ form.addEventListener('submit', function(e) {
 </footer>
 </body>
 </html>
+
 
