@@ -126,7 +126,30 @@ footer { background:#0077b6; color:white; text-align:center; padding:20px 0;}
 <section class="box" id="intake-form">
     <h2>✅ File Your Taxes in 4 Easy Steps</h2>
     <ul>
-        <li><strong>Step 1:</strong> Complete the Intake Form via <a href="intake-form.html">Website</a></li>
+        <li><strong>Step 1:</strong> Complete the 
+        <!-- KoloTech Branded Small Intake Form Button -->
+        <a href="/intake-form.html" target="_blank" style="
+            display: inline-block;
+            background-color: #556cd6;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 8px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            text-align: center;
+            transition: background 0.3s ease;
+            ">
+                Intake Form
+        </a>
+
+            <!-- Hover effect using inline JS -->
+            <script>
+            const intakeBtn = document.querySelector('a[href="YOUR_INTAKE_FORM_LINK"]');
+            intakeBtn.addEventListener('mouseenter', () => intakeBtn.style.backgroundColor = '#4054a0');
+            intakeBtn.addEventListener('mouseleave', () => intakeBtn.style.backgroundColor = '#556cd6');
+            </script>
+        </li>
         <li><strong>Step 2:</strong> Submit your tax documents to <a href="mailto:KoloTech.ca@gmail.com">KoloTech.ca@gmail.com</a> or WhatsApp: 6474666762</li>
         <li><strong>Step 3:</strong> We prepare your return and send you a Tax Summary for review</li>
         <li><strong>Step 4:</strong> Pay the CRA NETFILE fee and receive your CRA confirmation and T1 copy</li>
