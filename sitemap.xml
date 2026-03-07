@@ -3,26 +3,36 @@
 
   <url>
     <loc>https://www.kolotech.ca/</loc>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://www.kolotech.ca/personal-tax</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://www.kolotech.ca/self-employed-tax</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://www.kolotech.ca/incorporated-tax</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://www.kolotech.ca/intake-form</loc>
-    <priority>0.8</priority>
+    <lastmod>2026-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
