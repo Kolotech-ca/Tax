@@ -3,13 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KoloTech Tax Services - Virtual Tax Filing</title>
+<title>Online Tax Filing Canada | $34.99 Income Tax Return | Kolotech Tax Services</title>
+<meta name="description" content="Affordable online tax filing in Canada starting at $34.99. CRA NETFILE certified tax preparer for personal, student, and self-employed tax returns. Fast, secure virtual tax filing across Canada.">
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <style>
 html { scroll-behavior: smooth; }
 body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background:#f0f8ff; color:#333;}
 a { color:#0077b6; text-decoration:none;}
 a:hover { text-decoration:underline;}
+h2,h3{margin-top:0;color:#0066cc;}
 
 /* Hero */
 .hero { background: linear-gradient(to right,#0077b6,#00b386); color:white; text-align:center; padding:80px 20px 60px; position:relative;}
@@ -31,10 +33,10 @@ nav a:hover { opacity:0.8;}
 /* Container */
 .container { max-width:1100px; margin:auto; padding:20px;}
 section { margin-bottom:40px;}
-h2 { color:#0077b6; margin-bottom:15px; font-size:1.8rem;}
+h2{color:#0066cc;border-bottom:3px solid #00cc99;display:inline-block;padding-bottom:5px;margin-bottom:20px;}
 .box { background:white; padding:20px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.05); margin-bottom:20px;}
 ul { list-style:none; padding-left:0;}
-ul li { margin-bottom:10px; font-size:1rem;}
+ul li {position:relative;padding-left:25px;margin-bottom:12px;}
 .btn { display:inline-block; margin-top:15px; padding:12px 25px; background:#0077b6; color:white; border-radius:5px; font-weight:bold; text-align:center;}
 .btn:hover { background:#005f86;}
 
@@ -111,13 +113,11 @@ footer { background:#0077b6; color:white; text-align:center; padding:20px 0;}
 <header id="home">
     <div class="hero">
         <img src="https://KoloTech.ca/logo.png" alt="KoloTech Logo" class="logo">
-        <h1>File Your Taxes Quickly & Virtually</h1>
-        <p>KoloTech provides fast, reliable, and 100% virtual tax filing services for individuals, self-employed, and corporations across Canada.</p>
-        <a href="#intake-form" class="btn">Start Your Intake Form</a>
+        <h1>Affordable Online Tax Filing Canada</h1>
+        <p>Kolotech Tax Services provides fast and secure online tax filing across Canada.<br> Our CRA NETFILE certified tax preparer helps individuals, students, and self-employed workers file their income tax returns quickly and accurately.</p><a href="#intake-form" class="btn">Start Your Intake Form</a>
         <a href="#intake-form" class="scroll-down">&#x25BC;</a>
     </div>
 </header>
-
 
 
 <div class="container">
@@ -152,7 +152,7 @@ footer { background:#0077b6; color:white; text-align:center; padding:20px 0;}
         </li>
         <li><strong>Step 2:</strong> Submit your tax documents to <a href="mailto:KoloTech.ca@gmail.com">KoloTech.ca@gmail.com</a> or WhatsApp: 6474666762</li>
         <li><strong>Step 3:</strong> We prepare your return and send you a Tax Summary for review</li>
-        <li><strong>Step 4:</strong> Pay the CRA NETFILE fee and receive your CRA confirmation and T1 copy</li>
+        <li><strong>Step 4:</strong> Pay the invoice via Interac e-Transfer or Secure Online Payment and receive your CRA confirmation and T1 copy </li>
         <li>
         <a href="https://buy.stripe.com/fZucMYf5AeDgfLibMY5sA00" target="_blank" style="
             display: inline-block;
@@ -172,13 +172,77 @@ footer { background:#0077b6; color:white; text-align:center; padding:20px 0;}
     </ul>
 </section>
 
-<!-- Count down -->
-<section class="box">
-<script src="https://cdn.logwork.com/widget/countdown.js"></script>
-<a href="https://logwork.com/countdown-4hyr" 
-class="countdown-timer" data-style="circles" data-timezone="America/Toronto" 
-data-textcolor="green" data-date="2026-04-30 23:59" data-background="green" data-digitscolor="green" data-unitscolor="green">April 30, 2026: Deadline to file your taxes.</a>
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AccountingService",
+  "name":"Kolotech Tax Services",
+  "url":"https://www.kolotech.ca",
+  "telephone":"+1-647-466-6762",
+  "areaServed":"Canada",
+  "serviceType":"Income Tax Filing",
+  "priceRange":"$34.99"
+}
+</script>
+
+<!-- Compact Circular Countdown Section -->
+<section id="countdown" class="box" style="background:linear-gradient(135deg,#00cc99,#0066cc);color:white;text-align:center;border-radius:15px;margin:20px 0;padding:25px 20px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
+  <h2 style="font-size:1.6em;">Tax Filing Deadline Countdown</h2>
+  <p style="font-size:1em;">Submit your taxes before <strong>April 30, 2026</strong></p>
+
+  <!-- Circular Canvas -->
+  <div style="position:relative;width:120px;height:120px;margin:20px auto;">
+    <canvas id="daysCanvas" width="120" height="120"></canvas>
+    <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.2em;font-weight:bold;" id="daysText">0</div>
+  </div>
+
+  <!-- CTA Button -->
+  <a href="intake-form.html" class="cta" style="display:inline-block;margin-top:10px;background:#fff;color:#0066cc;padding:8px 20px;border-radius:25px;font-weight:bold;transition:0.3s;font-size:0.95em;">Start Filing Now</a>
 </section>
+
+<!-- Circular Countdown Script -->
+<script>
+const deadline = new Date("April 30, 2026").getTime();
+const totalDays = Math.ceil((deadline - new Date().getTime()) / (1000*60*60*24));
+const canvas = document.getElementById('daysCanvas');
+const ctx = canvas.getContext('2d');
+const radius = canvas.width/2 - 10;
+const centerX = canvas.width/2;
+const centerY = canvas.height/2;
+
+function drawCircularCountdown(){
+    const now = new Date().getTime();
+    let daysLeft = Math.ceil((deadline - now)/(1000*60*60*24));
+    daysLeft = daysLeft < 0 ? 0 : daysLeft;
+
+    document.getElementById('daysText').innerText = daysLeft;
+
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    // Background circle
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, 0, 2*Math.PI);
+    ctx.strokeStyle = "rgba(255,255,255,0.2)";
+    ctx.lineWidth = 10;
+    ctx.stroke();
+
+    // Progress circle
+    const progress = 1 - (daysLeft/totalDays);
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, radius, -Math.PI/2, (-Math.PI/2) + (2*Math.PI*progress));
+    const gradient = ctx.createLinearGradient(0,0,120,120);
+    gradient.addColorStop(0,"#00cc99");
+    gradient.addColorStop(1,"#0066cc");
+    ctx.strokeStyle = gradient;
+    ctx.lineWidth = 10;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+}
+
+setInterval(drawCircularCountdown,1000);
+drawCircularCountdown();
+</script>
 
 <!-- Why Choose Us -->
 <section class="box">
@@ -249,6 +313,17 @@ data-textcolor="green" data-date="2026-04-30 23:59" data-background="green" data
         <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals.html" target="_blank">Individuals</a> | 
         <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html" target="_blank">Corporations (T2)</a>
     </p>
+</section>
+
+<!-- FAQ -->
+<section class="box" id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <h3>How much does it cost?</h3>
+    <p>Personal tax returns start at $34.99. Self-employed returns start at $69.99.</p>
+    <h3>Is online filing safe?</h3>
+    <p>Yes, we use CRA NETFILE certified tax software for secure online filing.</p>
+    <h3>Which documents do I need?</h3>
+    <p>Provide T4, T4A, T5 slips, tuition receipts, childcare expenses, SIN, and dependent details.</p>
 </section>
 
 <!-- Referral -->
