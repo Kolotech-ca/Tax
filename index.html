@@ -3,455 +3,237 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Online Tax Filing in Canada | Personal, Self-Employed & Corporate | KoloTech</title>
-<meta name="description" content="Affordable online tax filing in Canada starting at $34.99. CRA NETFILE certified tax preparer for personal, student, and self-employed tax returns. Fast, secure virtual tax filing across Canada.">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<title>KoloTech | File Taxes Online Canada</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-html { scroll-behavior: smooth; }
-body { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; background:#f0f8ff; color:#333;}
-a { color:#0077b6; text-decoration:none;}
-a:hover { text-decoration:underline;}
-h2,h3{margin-top:0;color:#0066cc;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',sans-serif;background:#f6fbff;color:#1a1a1a}
 
-/* Hero */
-.hero { background: linear-gradient(to right,#0077b6,#00b386); color:white; text-align:center; padding:80px 20px 60px; position:relative;}
-.hero img.logo { max-height:80px; margin-bottom:20px;}
-.hero h1 { font-size:2.5rem; margin-bottom:20px;}
-.hero p { font-size:1.2rem; margin-bottom:30px;}
-.hero .btn { background:white; color:#0077b6; font-weight:bold; padding:15px 30px; border-radius:8px; font-size:1.2rem;}
-.hero .btn:hover { background:#e6f7f1; color:#0077b6;}
+/* NAV */
+.nav{position:sticky;top:0;background:white;z-index:999;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
+.nav-inner{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:12px 20px}
+.nav img{height:40px}
+.nav a{margin-left:20px;font-weight:600;color:#0066cc}
+.nav-cta{background:linear-gradient(135deg,#00cc99,#0066cc);color:#fff!important;padding:8px 16px;border-radius:6px}
 
-/* Scroll arrow */
-.scroll-down { display:block; margin:40px auto 0; font-size:2rem; color:white; animation:bounce 2s infinite; text-decoration:none; }
-@keyframes bounce { 0%,20%,50%,80%,100% { transform:translateY(0);} 40% { transform:translateY(-15px);} 60% { transform:translateY(-8px);} }
+/* HERO */
+.hero{padding:100px 20px;text-align:center;background:linear-gradient(135deg,#0077b6,#00cc99);color:white}
+.hero h1{font-size:2.8rem;margin-bottom:15px}
+.hero p{font-size:1.2rem;margin-bottom:15px}
+.subtext{font-size:0.9rem;opacity:0.9;margin-top:5px}
+.btn{display:inline-block;background:#0077b6;color:white;padding:14px 28px;border-radius:8px;font-weight:600;margin:5px}
+.btn.white{background:white;color:#0077b6}
 
-/* Sticky Nav */
-nav { display:flex; justify-content:center; background:#00b386; padding:10px 0; flex-wrap:wrap; position:sticky; top:0; z-index:999; box-shadow:0 2px 5px rgba(0,0,0,0.1);}
-nav a { color:white; margin:5px 15px; font-weight:bold; font-size:1rem; transition:opacity 0.3s;}
-nav a:hover { opacity:0.8;}
+/* TRUST BAR */
+.trust{background:white;text-align:center;padding:15px;font-size:0.9rem;color:#555;font-weight:500}
 
-/* Container */
-.container { max-width:1100px; margin:auto; padding:20px;}
-section { margin-bottom:40px;}
-h2{color:#0066cc;border-bottom:3px solid #00cc99;display:inline-block;padding-bottom:5px;margin-bottom:20px;}
-.box { background:white; padding:20px; border-radius:10px; box-shadow:0 0 15px rgba(0,0,0,0.05); margin-bottom:20px;}
-ul { list-style:none; padding-left:0;}
-ul li {position:relative;padding-left:25px;margin-bottom:12px;}
-.btn { display:inline-block; margin-top:15px; padding:12px 25px; background:#0077b6; color:white; border-radius:5px; font-weight:bold; text-align:center;}
-.btn:hover { background:#005f86;}
+/* CONTAINER */
+.container{max-width:1100px;margin:auto;padding:40px 20px}
 
-/* Pricing cards */
-.pricing-cards { display:flex; flex-wrap:wrap; gap:20px; justify-content:center;}
-.card { flex:1 1 250px; background:#e6f7f1; padding:20px; border-radius:10px; text-align:center; box-shadow:0 0 10px rgba(0,0,0,0.05);}
-.card h3 { color:#0077b6; margin-bottom:10px;}
-.card p.price { font-size:1.5rem; color:#00b386; font-weight:bold; margin-bottom:15px;}
+/* CARD */
+.card{background:white;border-radius:12px;padding:25px;margin-bottom:25px;box-shadow:0 10px 25px rgba(0,0,0,0.05)}
 
-/* WhatsApp button */
-.whatsapp-btn { position:fixed; bottom:20px; right:20px; background:#25d366; color:white; border-radius:50%; padding:15px; font-size:24px; z-index:1000; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.3); cursor:pointer;}
-.whatsapp-btn:hover { opacity:0.9;}
+/* COUNTDOWN */
+.count{text-align:center;background:linear-gradient(135deg,#00cc99,#0066cc);color:white}
+.grid{display:flex;justify-content:center;gap:20px;margin:20px 0}
+.box{background:rgba(255,255,255,0.15);padding:15px;border-radius:10px}
+.box span{font-size:1.8rem;font-weight:bold}
 
-footer { background:#0077b6; color:white; text-align:center; padding:20px 0;}
-.social a { margin:0 10px; color:white; font-weight:bold;}
+/* STEPS */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:center}
+
+/* PRICING */
+.pricing{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.price-card{border:2px solid #eee;padding:25px;border-radius:10px;text-align:center;position:relative}
+.popular{border:2px solid #00cc99;transform:scale(1.05)}
+.popular::before{
+content:"MOST POPULAR";
+position:absolute;top:-10px;left:50%;transform:translateX(-50%);
+background:#00cc99;color:white;font-size:0.7rem;padding:3px 8px;border-radius:5px
+}
+.price{font-size:1.8rem;color:#00b386;margin:10px 0}
+
+/* TESTIMONIAL */
+.testimonial{margin-top:15px;font-size:0.95rem}
+.stars{color:#ffc107}
+
+/* CTA STRIP */
+.cta{background:linear-gradient(135deg,#0077b6,#00cc99);color:white;text-align:center;padding:60px 20px}
+
+/* STICKY CTA */
+.sticky-cta{
+position:fixed;bottom:0;width:100%;
+background:#0077b6;color:white;
+text-align:center;padding:12px;
+z-index:999;
+animation:pulse 2s infinite;
+}
+@keyframes pulse{0%{opacity:1}50%{opacity:0.85}100%{opacity:1}}
+
+/* FOOTER */
+.footer{background:#003f7f;color:white;padding:40px 20px}
+.footer-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px}
+.footer a{color:#cce6ff;font-size:0.9rem}
+.footer-bottom{text-align:center;margin-top:20px;opacity:0.7}
 </style>
-<link rel="canonical" href="https://www.kolotech.ca/">
 </head>
+
 <body>
-<!-- Sticky Navigation -->
-<nav class="sticky-nav">
-    <a href="/index.html">Home</a>
-    <a href="/personal-tax.html">Personal Tax</a>
-    <a href="/self-employed-tax.html">Self-Employed Tax</a>
-    <a href="/incorporated-tax.html">Incorporated (T2)</a>
-    <a href="/intake-form.html">Intake Form</a>
-    <a href="/contact.html">Contact Us</a>
-    <a href="https://buy.stripe.com/fZucMYf5AeDgfLibMY5sA00" target="_blank">Pay Invoice</a>
- </nav>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/16474666762" target="_blank" class="whatsapp-btn">💬</a>
+<!-- NAV -->
+<nav class="nav">
+<div class="nav-inner">
+<img src="https://KoloTech.ca/logo.png">
+<div>
+<a href="#">Home</a>
+<a href="#pricing">Pricing</a>
+<a href="payment.html">Pay Invoice</a>
+<a href="#faq">FAQ</a>
+<a href="/intake-form.html" class="nav-cta">Start Filing</a>
+</div>
+</div>
+</nav>
 
-<style>
-/* Sticky Navigation */
-.sticky-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #00b386;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    padding: 12px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.sticky-nav a {
-    color: white;
-    font-weight: bold;
-    margin: 5px 15px;
-    font-size: 1rem;
-    text-decoration: none;
-    transition: opacity 0.3s;
-}
-.sticky-nav a:hover { opacity: 0.8; }
+<!-- HERO -->
+<section class="hero">
+<h1>File Your Taxes Online in Minutes</h1>
+<p>Fast • Secure • CRA NETFILE Certified</p>
+<a href="/intake-form.html" class="btn white">Start Filing</a>
+<div class="subtext">✔ No hidden fees • ✔ Done in 24–48 hrs</div>
+</section>
 
-/* WhatsApp Floating Button */
-.whatsapp-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    font-size: 24px;
-    padding: 15px 18px;
-    border-radius: 50%;
-    z-index: 1000;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    transition: transform 0.2s;
-}
-.whatsapp-btn:hover { transform: scale(1.1); }
-</style>
-<!-- Hero -->
-<header id="home">
-    <div class="hero">
-        <img src="https://KoloTech.ca/logo.png" alt="KoloTech Logo" class="logo">
-        <h1>Affordable Online Tax Filing Canada</h1>
-        <p>Kolotech Tax Services provides fast and secure online tax filing across Canada.<br> Our CRA NETFILE certified tax preparer helps individuals, students, and self-employed workers file their income tax returns quickly and accurately.</p><a href="#intake-form" class="btn">Start Your Intake Form</a>
-        <a href="#intake-form" class="scroll-down">&#x25BC;</a>
-    </div>
-</header>
-
+<!-- TRUST -->
+<div class="trust">
+✔ CRA Certified &nbsp; | &nbsp; ✔ 100% Secure &nbsp; | &nbsp; ✔ Thousands Served
+</div>
 
 <div class="container">
 
-<!-- Steps -->
-<section class="box" id="intake-form">
-    <h2>✅ File Your Taxes in 4 Easy Steps</h2>
-    <ul>
-        <li><strong>Step 1:</strong> Complete the 
-        <!-- KoloTech Branded Small Intake Form Button -->
-        <a href="/intake-form.html" target="_blank" style="
-            display: inline-block;
-            background-color: #556cd6;
-            color: white;
-            font-size: 14px;
-            font-weight: bold;
-            padding: 8px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            text-align: center;
-            transition: background 0.3s ease;
-            ">
-                Intake Form
-        </a> <strong>(New Users Only)</strong>
+<!-- COUNTDOWN -->
+<div class="card count">
+<h2>Deadline Approaching</h2>
+<p>June 30, 2026</p>
+<div class="grid">
+<div class="box"><span id="d"></span><br>Days</div>
+<div class="box"><span id="h"></span><br>Hours</div>
+<div class="box"><span id="m"></span><br>Minutes</div>
+</div>
+<p><strong>File early to avoid penalties</strong></p>
+</div>
 
-            <!-- Hover effect using inline JS -->
-            <script>
-            const intakeBtn = document.querySelector('a[href="YOUR_INTAKE_FORM_LINK"]');
-            intakeBtn.addEventListener('mouseenter', () => intakeBtn.style.backgroundColor = '#4054a0');
-            intakeBtn.addEventListener('mouseleave', () => intakeBtn.style.backgroundColor = '#556cd6');
-            </script>
-        </li>
-        <li><strong>Step 2:</strong> Submit your tax documents to <a href="mailto:KoloTech.ca@gmail.com">KoloTech.ca@gmail.com</a> or WhatsApp: <a href="https://wa.me/16474666762" target="_blank">6474666762</a></li>
-        <li><strong>Step 3:</strong> We prepare your return and send you a Tax Summary for review</li>
-        <li><strong>Step 4:</strong> Pay the invoice via Interac e-Transfer or <a href="/payment.html">Secure Online Payment</a> and receive your CRA confirmation and T1 copy </li>
-        <li>
-        <a href="https://buy.stripe.com/fZucMYf5AeDgfLibMY5sA00" target="_blank" style="
-            display: inline-block;
-            background-color: #556cd6;
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 16px 40px;
-            border-radius: 8px;
-            text-decoration: none;
-            text-align: center;
-            transition: background 0.3s ease;
-        ">
-          PAY INVOICE AMOUNT
-        </a>
-        </li>
-    </ul>
-</section>
+<!-- STEPS -->
+<div class="card">
+<h2>How It Works</h2>
+<div class="steps">
+<div>1️⃣ Fill Form</div>
+<div>2️⃣ Upload Docs</div>
+<div>3️⃣ We Prepare</div>
+<div>4️⃣ Get Refund</div>
+</div>
+</div>
 
-<!-- Structured Data -->
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"AccountingService",
-  "name":"Kolotech Tax Services",
-  "url":"https://www.kolotech.ca",
-  "telephone":"+1-647-466-6762",
-  "areaServed":"Canada",
-  "serviceType":"Income Tax Filing",
-  "priceRange":"$34.99"
-}
-</script>
+<!-- PRICING -->
+<div class="card" id="pricing">
+<h2>Simple Pricing</h2>
+<div class="pricing">
 
-<!-- Compact Circular Countdown Section -->
-<section id="countdown" class="box" style="background:linear-gradient(135deg,#00cc99,#0066cc);color:white;text-align:center;border-radius:15px;margin:20px 0;padding:25px 20px;box-shadow:0 5px 15px rgba(0,0,0,0.1);">
-  <h2 style="font-size:1.6em;">Tax Filing Deadline Countdown</h2>
-  <p style="font-size:1em;">Submit your taxes before <strong>April 30, 2026</strong></p>
+<div class="price-card">
+<h3>Personal</h3>
+<div class="price">$34.99</div>
+<a href="/intake-form.html" class="btn">Start</a>
+</div>
 
-  <!-- Circular Canvas -->
-  <div style="position:relative;width:120px;height:120px;margin:20px auto;">
-    <canvas id="daysCanvas" width="120" height="120"></canvas>
-    <div style="position:absolute;top:0;left:0;width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.2em;font-weight:bold;" id="daysText">0</div>
-  </div>
+<div class="price-card popular">
+<h3>Self-Employed</h3>
+<div class="price">$69.99</div>
+<a href="/intake-form.html" class="btn">Start</a>
+</div>
 
-  <!-- CTA Button -->
-  <a href="intake-form.html" class="cta" style="display:inline-block;margin-top:10px;background:#fff;color:#0066cc;padding:8px 20px;border-radius:25px;font-weight:bold;transition:0.3s;font-size:0.95em;">Start Filing Now</a>
-</section>
+<div class="price-card">
+<h3>Corporate</h3>
+<div class="price">$299.99</div>
+<a href="/intake-form.html" class="btn">Start</a>
+</div>
 
-<!-- Circular Countdown Script -->
-<script>
-const deadline = new Date("April 30, 2026").getTime();
-const totalDays = Math.ceil((deadline - new Date().getTime()) / (1000*60*60*24));
-const canvas = document.getElementById('daysCanvas');
-const ctx = canvas.getContext('2d');
-const radius = canvas.width/2 - 10;
-const centerX = canvas.width/2;
-const centerY = canvas.height/2;
+</div>
+</div>
 
-function drawCircularCountdown(){
-    const now = new Date().getTime();
-    let daysLeft = Math.ceil((deadline - now)/(1000*60*60*24));
-    daysLeft = daysLeft < 0 ? 0 : daysLeft;
-
-    document.getElementById('daysText').innerText = daysLeft;
-
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-
-    // Background circle
-    ctx.beginPath();
-    ctx.arc(centerX, centerY, radius, 0, 2*Math.PI);
-    ctx.strokeStyle = "rgba(255,255,255,0.2)";
-    ctx.lineWidth = 10;
-    ctx.stroke();
-
-    // Progress circle
-    const progress = 1 - (daysLeft/totalDays);
-    ctx.beginPath();
-    ctx.arc(centerX, centerY, radius, -Math.PI/2, (-Math.PI/2) + (2*Math.PI*progress));
-    const gradient = ctx.createLinearGradient(0,0,120,120);
-    gradient.addColorStop(0,"#00cc99");
-    gradient.addColorStop(1,"#0066cc");
-    ctx.strokeStyle = gradient;
-    ctx.lineWidth = 10;
-    ctx.lineCap = 'round';
-    ctx.stroke();
-}
-
-setInterval(drawCircularCountdown,1000);
-drawCircularCountdown();
-</script>
-
-<!-- Why Choose Us -->
-<section class="box">
-    <h2>Why Choose KoloTech?</h2>
-    <ul>
-        <li>✔ Experienced & Certified CRA Authorized Tax Specialist</li>
-        <li>✔ Flat Rate Fee – No Hidden Charges</li>
-        <li>✔ Year-Round Support</li>
-        <li>✔ Fast, Reliable & Maximum Returns</li>
-        <li>✔ Licensed Tax Software – CRA NETFILE Certified</li>
-        <li>✔ 100% Virtual – Serving All of Canada</li>
-    </ul>
-</section>
-
-<!-- Services -->
-<section class="box" id="personal-tax">
-    <h2>We Handle</h2>
-    <ul>
-        <li>RRSP</li>
-        <li>Work-From-Home Expenses</li>
-        <li>RDSP</li>
-        <li>Uber, Lyft, DoorDash, Instacart income</li>
-        <li>T4, T4A, T5, T5018 slips</li>
-        <li>Corporate T2 Filing</li>
-        <li>Ontario Trillium Benefit (OTB)</li>
-        <li>And more...</li>
-    </ul>
-</section>
-
-<!-- Pricing Cards -->
-<section class="box" id="self-employed-tax">
-    <h2>Pricing & Tax Packages</h2>
-    <div class="pricing-cards">
-        <div class="card">
-            <h3>Personal Tax</h3>
-            <p class="price">$34.99</p>
-            <p>Includes up to 2 T-slips. $5 for each additional document.</p>
-            <a href="intake-form.html" class="btn">Start Personal Tax</a>
-        </div>
-        <div class="card">
-            <h3>Self-Employed Tax</h3>
-            <p class="price">$69.99</p>
-            <p>Includes up to 2 T-slips. $5 for each additional document.</p>
-            <a href="intake-form.html" class="btn">Start Self-Employed Tax</a>
-        </div>
-        <div class="card">
-            <h3>Incorporated (T2)</h3>
-            <p class="price">$299.99</p>
-            <p>Corporate T2 Filing, includes financial statements and CRA submission.</p>
-            <a href="intake-form.html" class="btn">Start T2 Filing</a>
-        </div>
-    </div>
-</section>
-
-<!-- Requirements -->
-<section class="box" id="incorporated-tax">
-    <h2>What We Need From You</h2>
-    <ul>
-        <li>Personal details of all adults (Full Name, Date of Birth, Address, SIN)</li>
-        <li>Dependent details (Full Name, Date of Birth, SIN)</li>
-        <li>Income slips (T4, T4E, T5, T4A, etc.)</li>
-        <li>Expense documents (Tuition, Childcare, etc., if applicable)</li>
-        <li>Disability benefit documentation (if applicable)</li>
-        <li>For Ontario Trillium Benefit (OTB) – Total rent paid, landlord’s name & address</li>
-        <li>Corporate documents for T2 filing (financial statements, income, expenses, CRA business number)</li>
-    </ul>
-    <p>Helpful CRA links: 
-        <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals.html" target="_blank">Individuals</a> | 
-        <a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations.html" target="_blank">Corporations (T2)</a>
-    </p>
-</section>
+<!-- TESTIMONIALS -->
+<div class="card">
+<h2>Trusted by Clients</h2>
+<p class="testimonial"><span class="stars">★★★★★</span><br>"Got my refund fast and stress-free."</p>
+<p class="testimonial"><span class="stars">★★★★★</span><br>"Best tax service I've used!"</p>
+</div>
 
 <!-- FAQ -->
-<section class="box" id="faq">
-    <h2>Frequently Asked Questions</h2>
-    <h3>How much does it cost?</h3>
-    <p>Personal tax returns start at $34.99. Self-employed returns start at $69.99.</p>
-    <h3>Is online filing safe?</h3>
-    <p>Yes, we use CRA NETFILE certified tax software for secure online filing.</p>
-    <h3>Which documents do I need?</h3>
-    <p>Provide T4, T4A, T5 slips, tuition receipts, childcare expenses, SIN, and dependent details.</p>
-</section>
-
-<!-- Our Services -->
-<section class="box" id="services">
-    <h2>Our Services</h2>
-    <p><a href="/personal-tax.html">Personal Tax Filing</a></p>
-    <p><a href="/self-employed-tax.html">Self-Employed Tax Filing</a></p>
-    <p><a href="/incorporated-tax.html">Corporate Tax Filing</a></p>
-</section>
-
-<!-- Referral -->
-<section class="box">
-    <h2>Referral Program</h2>
-    <ul>
-        <li>Refer a friend or family member and earn up to $100*</li>
-        <li>$5 for a single return</li>
-        <li>$10 for a family return</li>
-    </ul>
-</section>
-
-<!-- Social -->
-<section class="box">
-<!-- Font Awesome Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
-.social-section {
-    text-align: center;
-    padding: 25px;
-    background: #f8f9fb;
-    border-radius: 12px;
-}
-
-.social-section h2 {
-    margin-bottom: 15px;
-    color: #1f3c88;
-    font-family: Arial, sans-serif;
-}
-
-.social-icons a {
-    display: inline-block;
-    margin: 8px;
-    padding: 12px 16px;
-    border-radius: 8px;
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-/* Brand Colors */
-.instagram { background: #E1306C; }
-.facebook { background: #1877F2; }
-.youtube { background: #FF0000; }
-
-/* Hover Effect */
-.social-icons a:hover {
-    transform: translateY(-3px);
-    opacity: 0.85;
-}
-
-.video-link {
-    margin-top: 15px;
-    display: block;
-    font-weight: bold;
-    color: #1f3c88;
-    text-decoration: none;
-}
-
-.video-link:hover {
-    text-decoration: underline;
-}
-</style>
-
-<div class="social-section">
-    <h2>Follow Us on Social Media</h2>
-
-    <div class="social-icons">
-        <a href="https://www.instagram.com/KoloTech.ca/" target="_blank" class="instagram">
-            <i class="fab fa-instagram"></i> Instagram
-        </a>
-
-        <a href="https://www.facebook.com/KoloTech/" target="_blank" class="facebook">
-            <i class="fab fa-facebook-f"></i> Facebook
-        </a>
-
-        <a href="https://www.youtube.com/@KoloTech_tax" target="_blank" class="youtube">
-            <i class="fab fa-youtube"></i> YouTube
-        </a>
-    </div>
-
-    <a class="video-link" href="https://youtu.be/mXb5IzRtpEI" target="_blank">
-        ▶ Watch: How and Why Virtual Tax Filing
-    </a>
+<div class="card" id="faq">
+<h2>FAQ</h2>
+<p><strong>Is this secure?</strong><br>Yes, CRA-certified software is used.</p>
+<p><strong>How fast?</strong><br>Most returns completed within 24–48 hours.</p>
+<p><strong>What if I have questions?</strong><br>We support you year-round.</p>
 </div>
-</section>
-
-<section style="text-align:center;padding:50px" class="box"">
-
-<h2>How and Why Virtual Tax Filing</h2>
-
-<a href="https://youtu.be/mXb5IzRtpEI" target="_blank">
-
-<img src="https://img.youtube.com/vi/mXb5IzRtpEI/maxresdefault.jpg"
-style="max-width:700px;width:100%;border-radius:10px;box-shadow:0 8px 20px rgba(0,0,0,0.25);">
-
-</a>
-
-<p>Click to watch on YouTube</p>
-
-</section>
 
 </div>
 
-<!-- WhatsApp button -->
-<a href="https://wa.me/16474666762" target="_blank" class="whatsapp-btn">💬</a>
+<!-- CTA -->
+<section class="cta">
+<h2>Ready to File Your Taxes?</h2>
+<a href="/intake-form.html" class="btn white">Start Filing Now</a>
+</section>
 
-<!-- Footer -->
-<footer style="background:#0077b6; color:white; text-align:center; padding:20px 0; margin-top:30px;">
-    <p>&copy; 2026 KoloTech Tax Services | 
-    <a href="mailto:KoloTech.ca@gmail.com" style="color:white;">KoloTech.ca@gmail.com</a> | 647-466-6762</p>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="footer-grid">
+<div>
+<h3>KoloTech</h3>
+<p>Affordable online tax filing across Canada</p>
+</div>
+<div>
+<h4>Services</h4>
+<a href="personal-tax.html">Personal</a><br>
+<a href="self-employed-tax.html">Self-Employed</a><br>
+<a href="incorporated-tax.html">Corporate</a>
+</div>
+<div>
+<h4><a href="contact.html">Contact</a></h4>
+<p>KoloTech.ca@gmail.com</p>
+<p>647-466-6762</p>
+</div>
+</div>
+<div class="footer-bottom">
+© 2026 KoloTech Tax Services
+</div>
 </footer>
-<!-- Font Awesome for Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- STICKY CTA -->
+<div class="sticky-cta">
+🚀 Start filing now → <a href="/intake-form.html" style="color:white;font-weight:bold">Click here</a>
+</div>
+
+<!-- WHATSAPP PROMPT -->
+<script>
+setTimeout(()=>{
+if(confirm("Need help filing your taxes? Chat with us on WhatsApp.")){
+window.location.href="https://wa.me/16474666762";
+}
+},15000);
+</script>
+
+<!-- COUNTDOWN -->
+<script>
+const deadline=new Date("June 30, 2026 23:59:00").getTime();
+function update(){
+let diff=deadline-new Date().getTime();
+if(diff<0) diff=0;
+document.getElementById("d").innerText=Math.floor(diff/(1000*60*60*24));
+document.getElementById("h").innerText=Math.floor((diff/(1000*60*60))%24);
+document.getElementById("m").innerText=Math.floor((diff/(1000*60))%60);
+}
+setInterval(update,1000);
+update();
+</script>
+
 </body>
-
 </html>
-
-
-
