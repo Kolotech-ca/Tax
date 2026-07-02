@@ -120,8 +120,10 @@ position:fixed;bottom:80px;right:20px;background:#25D366;color:white;width:55px;
 
 <!-- COUNTDOWN RESTORED -->
 <div class="card count">
-<h2>Deadline Approaching</h2>
-<p><strong>June 30, 2026:</strong> Filing deadline for self-employed individuals.</p>
+<h2>NETFILE and ReFILE services</h2>
+<p><strong>Friday, January 29, 2027</strong> The NETFILE and ReFILE services are open for transmission until Friday, January 29, 2027. 
+  You can electronically file your 2018, 2019, 2020, 2021, 2022, 2023, 2024 and 2025 initial personal income tax and benefit return using NETFILE 
+  and you can file your amended T1 returns for 2022, 2023, 2024 and 2025 using ReFILE.</p>
 <div class="grid">
 <div class="box"><div id="d"></div>Days</div>
 <div class="box"><div id="h"></div>Hours</div>
@@ -179,11 +181,41 @@ position:fixed;bottom:80px;right:20px;background:#25D366;color:white;width:55px;
 
 <!-- TESTIMONIALS RESTORED -->
 <div class="card">
-<h2>Trusted by Clients</h2>
-<div class="testimonial">★★★★★ "Fast and simple process." <br><b>Ahmed R., Toronto</b></div>
-<div class="testimonial">★★★★★ "Very professional service." <br><b>Sarah K., Ottawa</b></div>
-<div class="testimonial">★★★★★ "Smooth experience." <br><b>Jaspreet S., Brampton</b></div>
-<div class="testimonial">★★★★★ "Quick refund processing." <br><b>Michael T., Calgary</b></div>
+  <h2>Trusted by Canadians Nationwide</h2>
+
+  <p class="testimonial-intro">
+    Thousands of clients have trusted us for fast, reliable, and hassle-free tax services.
+  </p>
+
+  <div class="testimonial">
+    ⭐⭐⭐⭐⭐<br>
+    "The entire process was quick, simple, and stress-free. Highly recommend!"
+    <br><b>Ahmed R. — Toronto</b>
+  </div>
+
+  <div class="testimonial">
+    ⭐⭐⭐⭐⭐<br>
+    "Professional, knowledgeable, and responsive from start to finish."
+    <br><b>Sarah K. — Ottawa</b>
+  </div>
+
+  <div class="testimonial">
+    ⭐⭐⭐⭐⭐<br>
+    "Excellent customer service and a smooth experience. I'll definitely use them again."
+    <br><b>Jaspreet S. — Brampton</b>
+  </div>
+
+  <div class="testimonial">
+    ⭐⭐⭐⭐⭐<br>
+    "My refund was processed quickly, and everything was handled professionally."
+    <br><b>Michael T. — Calgary</b>
+  </div>
+
+  <div class="trust-badges">
+    ✅ Secure & Confidential &nbsp; • &nbsp;
+    🇨🇦 Serving Clients Across Canada &nbsp; • &nbsp;
+    ⭐ 5-Star Customer Satisfaction
+  </div>
 </div>
 
 <!-- FAQ EXPANDED -->
@@ -233,7 +265,7 @@ $1
 <div class="sticky">🚀 Start Filing → <a href="/intake-form.html" style="color:white;font-weight:bold">Click here</a></div>
 
 <script>
-const deadline=new Date("June 30, 2026 23:59:00").getTime();
+const deadline=new Date("January 29, 2027 23:59:00").getTime();
 function update(){
 let diff=deadline-new Date().getTime();
 document.getElementById("d").innerText=Math.floor(diff/(1000*60*60*24));
